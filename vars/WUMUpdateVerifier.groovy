@@ -106,7 +106,7 @@ def call() {
         stage('build-docker-image') {
           steps {
             echo "Building prodcut Docker images with latest updates from WUM UAT ... "
-            build job: 'wum-k8s-docker-image-builder'
+            build job: 'nishika-wum-k8s-job-runner'
             echo "Product Docker image build is successful."
           }
         }
